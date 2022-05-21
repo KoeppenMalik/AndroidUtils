@@ -27,7 +27,7 @@ public class FileManager {
      * @return the file, if it was successfully created, null otherwise
      * @throws IOException if an I/O error occurred or the folder doesn't exist
      */
-    public static File createFiles(File folder, String fileName) throws IOException {
+    public static File createFile(File folder, String fileName) throws IOException {
         boolean isFileCreated = false;
         if (!folder.exists()) {
             throw new IOException("Folder doesn't exist");

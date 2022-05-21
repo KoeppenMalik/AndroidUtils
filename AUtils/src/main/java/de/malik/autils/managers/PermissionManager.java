@@ -16,7 +16,7 @@ public class PermissionManager {
 
     public static final String TAG = "PermissionManager";
 
-    public void requestPermissions(String[] permissions, Activity activity) {
+    public void requestPermissions(Activity activity, String... permissions) {
         if (!hasPermissions(permissions, activity.getApplicationContext())) {
             Log.e(TAG, "Mind that the requested permissions must be specified in the manifest");
             askForPermissions(permissions, activity);
